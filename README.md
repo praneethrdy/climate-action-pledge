@@ -175,7 +175,7 @@ The application is ready for deployment to:
 
 For questions or support, please contact:
 - Email: devarannagaripraneeth@gmail.com
-- Phone: +921 9392577566
+- Phone: +91 9392577566
 
 ## 📄 License
 
