@@ -174,8 +174,8 @@ The application is ready for deployment to:
 ## 📞 Contact
 
 For questions or support, please contact:
-- Email: info@climateactionpledge.com
-- Phone: +1 (555) 123-4567
+- Email: devarannagaripraneeth@gmail.com
+- Phone: +921 9392577566
 
 ## 📄 License
 
