@@ -1,0 +1,102 @@
+/* Climate Action Pledge WordPress Responsive Styles */
+
+.climate-pledge-container,
+.climate-pledge-shortcode {
+    width: 100%;
+    max-width: 100%;
+    margin: 20px 0;
+    position: relative;
+}
+
+.climate-pledge-container iframe,
+.climate-pledge-shortcode iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.climate-pledge-container iframe:hover,
+.climate-pledge-shortcode iframe:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive breakpoints */
+@media (max-width: 1200px) {
+    .climate-pledge-responsive iframe {
+        height: 750px !important;
+    }
+}
+
+@media (max-width: 992px) {
+    .climate-pledge-responsive iframe {
+        height: 700px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .climate-pledge-container iframe,
+    .climate-pledge-shortcode iframe,
+    .climate-pledge-responsive iframe {
+        height: 600px !important;
+        border-radius: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .climate-pledge-container,
+    .climate-pledge-shortcode {
+        margin: 15px 0;
+    }
+    
+    .climate-pledge-container iframe,
+    .climate-pledge-shortcode iframe,
+    .climate-pledge-responsive iframe {
+        height: 550px !important;
+        border-radius: 4px;
+    }
+}
+
+@media (max-width: 480px) {
+    .climate-pledge-responsive iframe {
+        height: 500px !important;
+    }
+}
+
+/* WordPress theme compatibility */
+.widget .climate-pledge-container {
+    margin: 10px 0;
+}
+
+.entry-content .climate-pledge-shortcode {
+    margin: 30px 0;
+}
+
+/* Loading state */
+.climate-pledge-container::before,
+.climate-pledge-shortcode::before {
+    content: "Loading Climate Action Pledge...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #6b7280;
+    font-size: 16px;
+    z-index: -1;
+}
+
+/* Accessibility improvements */
+.climate-pledge-container iframe:focus,
+.climate-pledge-shortcode iframe:focus {
+    outline: 2px solid #10b981;
+    outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+    .climate-pledge-container,
+    .climate-pledge-shortcode {
+        display: none;
+    }
+}
